@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Registrasi</title>
+  <link rel="stylesheet" href="Style/formStyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="tabs">
+    <button class="btn-12" onclick="openTab(event, 'Registrasi')"><span>Registrasi</span></button>
+    <button class="btn-12" onclick="openTab(event, 'ListPendaftar')"><span>List Pendaftar</span></button>
+  </div>
+
+  <div class="container tab-content" id="Registrasi">
+    <form class="rounded-5 shadow-5-strong p-5" id="registrationForm">
+      <div class="form-outline mb-3 form-group">
+        <input type="text" class="form-control" id="input-name" placeholder="Masukkan Nama anda" required>
+      </div>
+      <div class="form-outline mb-3 form-group">
+        <input type="number" class="form-control" id="input-age" placeholder="Masukkan Umur Anda" required>
+        <div id="ageHelp" class="form-text">Minimum age 25 years</div>
+      </div>
+      <div class="mb-3 label form-group">
+        <input type="number" class="form-control" id="input-money" placeholder="Masukkan Uang Sangu" required>
+        <div id="moneyHelp" class="form-text">Minimum money is 100 thousand and maximum is 1 million</div>
+      </div>
+      <div class="form-group tombol">
+        <button type="submit" class="btn-12" onclick="submitForm()"><span>Submit</span></button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container tab-content" id="ListPendaftar">
+    <table class="table table-bordered" id="pendaftarTable">
+      <thead>
+        <tr>
+          <!-- <th scope="col">NO</th> -->
+          <th scope="col">Nama</th>
+          <th scope="col">Umur</th>
+          <th scope="col">Uang Sangu</th>
+        </tr>
+      </thead>
+      <tbody id="pendaftarData">
+
+      </tbody>
+    </table>
+    <div class="resume">
+      <p id="resumeText"></p>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="Script/script.js"></script>
+</body>
+
+</html>

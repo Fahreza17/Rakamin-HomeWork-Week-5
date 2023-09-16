@@ -1,0 +1,143 @@
+body {
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/611/512/852/firewatch-video-games-mountains-nature-wallpaper-d8a63d5810302c48f08c913ea8c2444a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10%;
+    margin-bottom: -60px;
+}
+
+form {
+    background: rgb(84, 0, 49);
+}
+
+.tab-content {
+    display: flex;
+    margin-top: 7%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tombol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-text {
+    color: #fff !important;
+}
+
+table.table.table.table-bordered {
+    text-align: center;
+    border-color: #fff;
+    --bs-table-bg: rgb(84, 0, 49);
+    --bs-table-color: #fff;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-12 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: rgb(84, 0, 49);
+    background-image: none;
+    color: #000;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(rgb(84, 0, 49), #ff6c40);
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.btn-12:disabled {
+    cursor: default;
+}
+
+.btn-12:-moz-focusring {
+    outline: auto;
+}
+
+.btn-12 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-12 [hidden] {
+    display: none;
+}
+
+.btn-12 {
+    border-radius: 99rem;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 0.8rem 3rem;
+    position: relative;
+}
+
+.btn-12 span {
+    mix-blend-mode: difference;
+    color: #fff;
+}
+
+.btn-12:after,
+.btn-12:before {
+    background: linear-gradient(90deg,
+            #ff6c40 25%,
+            transparent 0,
+            transparent 50%,
+            #ff6c40 0,
+            #ff6c40 75%,
+            transparent 0);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: translateY(var(--progress, 100%));
+    transition: transform 0.2s ease;
+}
+
+.btn-12:after {
+    --progress: -100%;
+    background: linear-gradient(90deg,
+            transparent 0,
+            transparent 25%,
+            #ff6c40 0,
+            #ff6c40 50%,
+            transparent 0,
+            transparent 75%,
+            #ff6c40 0);
+    z-index: -1;
+}
+
+.btn-12:hover:after,
+.btn-12:hover:before {
+    --progress: 0;
+}
